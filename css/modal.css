@@ -16,12 +16,14 @@
 }
 
 .modal {
-  min-width: 300px;
+  width: 80vw;
+  max-width: 600px;
   background: white;
   padding: 40px;
   border: 10px solid #FB5;
   box-shadow: 0 0 0 10px white;
   position: relative;
+  box-sizing: border-box;
 }
 
 @keyframes modal {
@@ -48,7 +50,7 @@
   border: 4px solid white;
   border-radius: 50%;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
-  background: #e54;
+  background: #e54 url('../img/close.svg') center center no-repeat;
   font-size: 1.2rem;
   color: white;
   font-family: 'IBM Plex Mono', monospace;
