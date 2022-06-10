@@ -6,6 +6,7 @@ import initModal from './modules/modal.js'
 import initDropdownMenu from './modules/dropdown-menu.js'
 import initMenuMobile from './modules/menu-mobile.js'
 import initAnimaNumeros from './modules/numeros.js'
+import { Slide, SlideNav } from "./modules/slide.js";
 
 initSmoothScroll();
 initScrollAnimation();
@@ -16,3 +17,6 @@ initDropdownMenu();
 initMenuMobile();
 initAnimaNumeros();
 
+const slide = new SlideNav('.slide', '.wrapper');
+slide.init();
+slide.addControl('.custom-controls')
